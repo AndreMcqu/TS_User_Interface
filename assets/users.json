@@ -1,0 +1,26 @@
+[
+    {
+        "Username": "user1",
+        "Phone": "06 07 08 09 10",
+        "Mail": "user1@gmail.com",
+        "Age": 49,
+        "isLogged": true,
+        "isAdmin": true
+    },
+    {
+        "Username": "user2",
+        "Phone": "10 09 08 07 06",
+        "Mail": "user2@gmail.com",
+        "Age": 94,
+        "isLogged": false,
+        "isAdmin": true
+    },
+    {
+        "Username": "user3",
+        "Phone": "10 10 10 01 01",
+        "Mail": "user2@gmail.com",
+        "Age": 10,
+        "isLogged": true,
+        "isAdmin": false
+    }
+]

@@ -1,13 +1,15 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import DATA from './assets/users.json'
+import Userinfo from './components/Userinfo';
+import User from './components/Interface'
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+    DATA.map((user) => 
+    <Userinfo user={user}/>
+    )
+  )
 }
 
 const styles = StyleSheet.create({
@@ -18,3 +20,11 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
+
+
+// DATA.map((item, key) => 
+//     <Userinfo 
+//     Username={item.Username}
+//     Phone={item.Phone}
+//     Mail={item.Mail}
+//     Age={item.Age}
